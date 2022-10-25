@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+  
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+/* Стили текста */
+.title{
+    margin: 80px 0 80px 0;
+    font-size: 64px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+.form{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+p{
+    margin-top: 0;
+}
+.crad{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+/* Стили блоков*/
+.main{
+    max-width: 1200px;
+    padding: 0 8%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 40px;
+}
+.form{
+    display: flex;
+}
+.form-selector{
+    line-height: 30px;
+    max-width: 446px;
+    width: 40%;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+}
+.clear{
+    display: flex;
+    align-items: flex-end;
+}
+.img{
+    margin-top: 100px;
+    width: 373px;
+    height: 100px;
+    object-position: 50% 50%;
+    object-fit:contain;
+}
+.position, .selector{
+    background-color: transparent;
+    width: calc(100% - 20px);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+}
+
+/*Стили*/
+.vacancy {
+    font-family: "Rubik", sans-serif;
+    margin: 0 8%;
+    border: 1px solid #000;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    max-height: 330px;
+}
+.vacancy-info__logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+img {
+    border-style: none;
+}
+.vacancy-info {
+    max-width: 39.13043%;
+    min-width: 232px;
+    padding-left: 20px;
+}
+.vacancy-info__image {
+    width: 100%;
+    height: 126px;
+    margin-bottom: 26px;
+}
+.vacancy-description {
+    width: 59.53177%;
+    padding-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.vacancy-info__specification {
+    color: #545454;
+}
+a, .vacancy-info__link {
+    color: #000000;
+    text-decoration: none;
+}
+.vacancy-description__shadow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 59px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -59.32%, #ffffff 42.84%);
+    z-index: 1;
+}
+.vacancy-description__button {
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+.active {
+    height: 1000px;
+  }
+
+@media screen and (max-width: 320px) {
+    .title {
+        margin: 80px 0px;
+        font-size: 32px;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-selector {
+        line-height: 30px;
+        width: 100%;
+        margin-right: 10px;
+        border-bottom: 1px solid #000;
+        margin-bottom: 16px;
+    }
+    .vacancy {
+        margin: 0 8%;
+        border: 1px solid #000;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        max-height: 100%;
+        max-width: 272px;
+        flex-direction: column;
+    }
+    .vacancy-description {
+        width: auto;
+        padding: 0 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    }
